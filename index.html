@@ -107,7 +107,17 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-
+  <script>
+    $('.expand-button').on('click', function(){
+  $('.special-text').toggleClass('-expanded');
+  
+  if ($('.special-text').hasClass('-expanded')) {
+    $('.expand-button').html('-');
+  } else {
+    $('.expand-button').html('+');
+  }
+});
+  </script>
 
   
   </body>
